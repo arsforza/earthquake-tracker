@@ -1,0 +1,16 @@
+.map-container {
+  height: 85vh;
+  margin: 30px;
+}
+
+.map-frame {
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+}
+
+.leaflet-marker-shadow {
+  display: none;
+}

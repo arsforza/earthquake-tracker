@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+.legend .legend-grade {
+  height: 30px;
+  width: 100%;
+}
+
+.legend .legend-label {
+  float: left;
+}
+
+.legend .legend-color {
+  width: 18px;
+  height: 18px;
+  float: right;
+}
+
+.legend {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background: #efefef;
+  color: #383838;
+  opacity: 0.8;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}

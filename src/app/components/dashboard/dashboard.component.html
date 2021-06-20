@@ -1,0 +1,10 @@
+<div id="map-filters">
+  <app-layer-toggle (onShowLayer)="map.showPlates($event)" actionText="show-plates" labelText="Show Plates"></app-layer-toggle>
+  <app-layer-toggle (onShowLayer)="map.showMinor($event)" actionText="show-minor" labelText="Show Minor"></app-layer-toggle>
+  <app-layer-toggle (onShowLayer)="map.showLight($event)" actionText="show-light" labelText="Show Light"></app-layer-toggle>
+  <app-layer-toggle (onShowLayer)="map.showModerate($event)" actionText="show-moderate" labelText="Show Moderate"></app-layer-toggle>
+  <app-layer-toggle (onShowLayer)="map.showStrong($event)" actionText="show-strong" labelText="Show Strong"></app-layer-toggle>
+  <app-layer-toggle (onShowLayer)="map.showMajor($event)" actionText="show-major" labelText="Show Major"></app-layer-toggle>
+  <app-layer-toggle (onShowLayer)="map.showGreat($event)" actionText="show-great" labelText="Show Great"></app-layer-toggle>
+</div>
+<app-map #map></app-map>
