@@ -1,10 +1,18 @@
-<div id="map-filters">
-  <app-layer-toggle (onShowLayer)="map.showPlates($event)" actionText="show-plates" labelText="Show Plates"></app-layer-toggle>
-  <app-layer-toggle (onShowLayer)="map.showMinor($event)" actionText="show-minor" labelText="Show Minor"></app-layer-toggle>
-  <app-layer-toggle (onShowLayer)="map.showLight($event)" actionText="show-light" labelText="Show Light"></app-layer-toggle>
-  <app-layer-toggle (onShowLayer)="map.showModerate($event)" actionText="show-moderate" labelText="Show Moderate"></app-layer-toggle>
-  <app-layer-toggle (onShowLayer)="map.showStrong($event)" actionText="show-strong" labelText="Show Strong"></app-layer-toggle>
-  <app-layer-toggle (onShowLayer)="map.showMajor($event)" actionText="show-major" labelText="Show Major"></app-layer-toggle>
-  <app-layer-toggle (onShowLayer)="map.showGreat($event)" actionText="show-great" labelText="Show Great"></app-layer-toggle>
+<div class="columns">
+  <div class="column is-one-fifth pt-6">
+    <div id="map-filters panel">
+      <div class="panel-heading">Filters</div>
+      <app-layer-toggle class="panel-block" (onShowLayer)="map.showPlates($event)" actionText="show-plates" labelText="Tectonic plates"></app-layer-toggle>
+      <div class="panel-block">Earthquakes</div>
+      <app-layer-toggle class="panel-block" (onShowLayer)="map.showMinor($event)" actionText="show-minor" labelText="Minor"></app-layer-toggle>
+      <app-layer-toggle class="panel-block" (onShowLayer)="map.showLight($event)" actionText="show-light" labelText="Light"></app-layer-toggle>
+      <app-layer-toggle class="panel-block" (onShowLayer)="map.showModerate($event)" actionText="show-moderate" labelText="Moderate"></app-layer-toggle>
+      <app-layer-toggle class="panel-block" (onShowLayer)="map.showStrong($event)" actionText="show-strong" labelText="Strong"></app-layer-toggle>
+      <app-layer-toggle class="panel-block" (onShowLayer)="map.showMajor($event)" actionText="show-major" labelText="Major"></app-layer-toggle>
+      <app-layer-toggle class="panel-block" (onShowLayer)="map.showGreat($event)" actionText="show-great" labelText="Great"></app-layer-toggle>
+    </div>
+  </div>
+  <div class="column is-four-fifth pt-6">
+    <app-map #map></app-map>
+  </div>
 </div>
-<app-map #map></app-map>

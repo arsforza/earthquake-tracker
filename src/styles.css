@@ -1,4 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+.map-container {
+  height: 85vh;
+}
+
+.map-frame {
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+}
+
+.leaflet-marker-shadow {
+  display: none;
+}
+
 
 .legend .legend-grade {
   height: 30px;
@@ -13,19 +28,17 @@
   width: 18px;
   height: 18px;
   float: right;
+  border: 1px solid #383838;
+  border-radius: 50%;
 }
 
 .legend {
-  width: 150px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   padding: 5px;
   background: #efefef;
   color: #383838;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 8px;
-}
-
-.hidden {
-  display: none;
 }
